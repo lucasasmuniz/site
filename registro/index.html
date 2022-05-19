@@ -10,10 +10,8 @@
         function validaSenha(){
             const senha = document.querySelector('input[name=senha]')
             const confirma = document.querySelector('input[name=confirma]')
-            if (confirma.value === senha.value){
-                confirma.setCustomValidity('');
-            }else{
-                confirma.setCustomValidity('As senhas não conferem')
+            if (confirma.value != senha.value){
+                alert('As senhas não conferem');
             }
         }
     </script>
@@ -37,11 +35,11 @@
                 </div>
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" required onchange='validaSenha()'>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
                 </div>
                 <div class="campo">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required onchange='validaSenha()'>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
                 </div>
                 <div class="campo">
                     <label for="confirma">Confirme sua senha</label>
