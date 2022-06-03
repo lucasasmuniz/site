@@ -60,6 +60,7 @@ html {
     text-transform: uppercase;
     color: black;
     cursor: pointer;
+    letter-spacing: 3px;
 }
 
 .catalogo:hover {
@@ -102,6 +103,10 @@ html {
     padding-left: 5px;
 }
 
+.bloco label{
+    margin: 10px;
+}
+
 .nomes {
     background-color: #FFF;
     border: none;
@@ -121,14 +126,33 @@ html {
 }
 
 .teste {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
     background-color: #FFF;
     border: none;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    padding: 0px;
     margin-right: 45%;
     margin-left: 45%;
+}
+
+.botao{
+    margin-left: 45%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    width: 10%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.botao:hover{
+    background: rgb(199, 199, 199);
+    transition: .5s;
 }
